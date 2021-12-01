@@ -1,0 +1,10 @@
+{
+    "name": "tc/php-mvc-core",
+    "authors": [
+        {
+            "name": "Gabriel Berza",
+            "email": "gabriel.berza@htss.ro"
+        }
+    ],
+    "require": {}
+}
