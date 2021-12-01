@@ -1,14 +1,14 @@
 <?php
 
-namespace app\core;
+namespace theworker\phpmvc;
 
-use app\core\exception\NotFoundException;
+use theworker\phpmvc\exception\NotFoundException;
 
 /**
  * Class Router
  *
  * @category
- * @package app\core
+ * @package theworker\phpmvc
  * @author gabriel.berza
  */
 class Router
@@ -49,7 +49,7 @@ class Router
 
         if(is_array($callback)){
             /**
-             * @var \app\core\Controller $controller
+             * @var \theworker\phpmvc\Controller $controller
              */
             $controller = new $callback[0]();
             Application::$app->controller = $controller;

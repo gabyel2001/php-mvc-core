@@ -1,12 +1,12 @@
 <?php
 
-namespace app\core;
+namespace theworker\phpmvc;
 
 /**
  * Class Session
  *
  * @category
- * @package app\core
+ * @package theworker\phpmvc
  * @author gabriel.berza
  */
 class Session
