@@ -2,6 +2,13 @@
 
 namespace theworker\phpmvc;
 
+/**
+ * Class Model
+ *
+ * @category
+ * @package theworker\phpmvc
+ * @author gabriel.berza
+ */
 abstract class Model
 {
     public const RULE_REQUIRED = 'required';

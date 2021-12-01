@@ -4,6 +4,13 @@ namespace theworker\phpmvc\db;
 
 use theworker\phpmvc\Application;
 
+/**
+ * Class Database
+ *
+ * @category
+ * @package theworker\phpmvc\db
+ * @author gabriel.berza
+ */
 class Database
 {
 

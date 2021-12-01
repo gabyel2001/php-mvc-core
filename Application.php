@@ -4,6 +4,13 @@ namespace theworker\phpmvc;
 
 use theworker\phpmvc\db\Database;
 
+/**
+ * Class Application
+ *
+ * @category
+ * @package theworker\phpmvc
+ * @author gabriel.berza
+ */
 class Application
 {
     public string $layout = 'main';

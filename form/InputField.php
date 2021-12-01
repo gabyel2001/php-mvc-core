@@ -4,6 +4,13 @@ namespace theworker\phpmvc\form;
 
 use theworker\phpmvc\Model;
 
+/**
+ * Class InputField
+ *
+ * @category
+ * @package theworker\phpmvc\form
+ * @author gabriel.berza
+ */
 class InputField extends BaseField
 {
     public const TYPE_TEXT = 'text';

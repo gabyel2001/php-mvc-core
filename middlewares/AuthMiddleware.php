@@ -5,6 +5,13 @@ namespace theworker\phpmvc\middlewares;
 use theworker\phpmvc\Application;
 use theworker\phpmvc\exception\ForbiddenException;
 
+/**
+ * Class AuthMiddleware
+ *
+ * @category
+ * @package theworker\phpmvc\middlewares
+ * @author gabriel.berza
+ */
 class AuthMiddleware extends BaseMiddleware
 {
     public array $actions = [];

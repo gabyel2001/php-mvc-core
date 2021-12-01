@@ -2,6 +2,13 @@
 
 namespace theworker\phpmvc\form;
 
+/**
+ * Class TextareaField
+ *
+ * @category
+ * @package theworker\phpmvc\form
+ * @author gabriel.berza
+ */
 class TextareaField extends BaseField
 {
     public function renderInput(): string

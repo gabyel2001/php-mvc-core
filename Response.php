@@ -2,6 +2,13 @@
 
 namespace theworker\phpmvc;
 
+/**
+ * Class Response
+ *
+ * @category
+ * @package theworker\phpmvc
+ * @author gabriel.berza
+ */
 class Response
 {
 

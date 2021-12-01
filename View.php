@@ -2,6 +2,13 @@
 
 namespace theworker\phpmvc;
 
+/**
+ * Class View
+ *
+ * @category
+ * @package theworker\phpmvc
+ * @author gabriel.berza
+ */
 class View
 {
     public string $title = '';

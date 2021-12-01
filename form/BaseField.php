@@ -4,6 +4,13 @@ namespace theworker\phpmvc\form;
 
 use theworker\phpmvc\Model;
 
+/**
+ * Class BaseField
+ *
+ * @category
+ * @package theworker\phpmvc\form
+ * @author gabriel.berza
+ */
 abstract class BaseField
 {
 

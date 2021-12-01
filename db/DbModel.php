@@ -5,6 +5,13 @@ namespace theworker\phpmvc\db;
 use theworker\phpmvc\Application;
 use theworker\phpmvc\Model;
 
+/**
+ * Class DbModel
+ *
+ * @category
+ * @package theworker\phpmvc\db
+ * @author gabriel.berza
+ */
 abstract class DbModel extends Model
 {
     abstract public function tableName(): string;

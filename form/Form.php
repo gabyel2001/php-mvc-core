@@ -4,6 +4,13 @@ namespace theworker\phpmvc\form;
 
 use theworker\phpmvc\Model;
 
+/**
+ * Class Form
+ *
+ * @category
+ * @package theworker\phpmvc\form
+ * @author gabriel.berza
+ */
 class Form
 {
 

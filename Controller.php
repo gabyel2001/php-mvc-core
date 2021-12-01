@@ -4,6 +4,13 @@ namespace theworker\phpmvc;
 
 use theworker\phpmvc\middlewares\BaseMiddleware;
 
+/**
+ * Class Controller
+ *
+ * @category
+ * @package theworker\phpmvc
+ * @author gabriel.berza
+ */
 class Controller
 {
     public string $layout = 'main';

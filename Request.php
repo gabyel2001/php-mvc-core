@@ -2,6 +2,13 @@
 
 namespace theworker\phpmvc;
 
+/**
+ * Class Request
+ *
+ * @category
+ * @package theworker\phpmvc
+ * @author gabriel.berza
+ */
 class Request
 {
     public function getPath(): string
