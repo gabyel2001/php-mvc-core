@@ -13,6 +13,11 @@ use theworker\phpmvc\db\Database;
  */
 class Application
 {
+    const EVENT_BEFORE_REQUEST = 'beforeRequest';
+    const EVENT_AFTER_REQUEST = 'afterRequest';
+
+    protected array $eventListeners = [];
+
     public string $layout = 'main';
     public static string $ROOT_DIR;
     public Router $router;
@@ -57,12 +62,26 @@ class Application
 
     public function run()
     {
-        try{
+        $this->triggerEvent(self::EVENT_BEFORE_REQUEST);
+        try {
             echo $this->router->resolve();
-        }catch (\Exception $e){
+        } catch (\Exception $e) {
             $this->response->setStatusCode($e->getCode());
             echo $this->view->renderView('_error', ['exception' => $e]);
         }
+    }
+
+    public function triggerEvent($eventName)
+    {
+        $callbacks = $this->eventListeners[$eventName] ?? false;
+        foreach ($callbacks as $callback){
+            call_user_func($callback);
+        }
+    }
+
+    public function on($eventName, $callback)
+    {
+        $this->eventListeners[$eventName][] = $callback;
     }
 
     /**
